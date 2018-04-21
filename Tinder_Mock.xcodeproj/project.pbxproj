@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		6E779D96208AAB2C005FE9F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E779D95208AAB2C005FE9F1 /* AppDelegate.swift */; };
-		6E779D98208AAB2C005FE9F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E779D97208AAB2C005FE9F1 /* ViewController.swift */; };
 		6E779D9B208AAB2D005FE9F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E779D99208AAB2D005FE9F1 /* Main.storyboard */; };
 		6E779D9D208AAB2D005FE9F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E779D9C208AAB2D005FE9F1 /* Assets.xcassets */; };
 		6E779DA0208AAB2D005FE9F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E779D9E208AAB2D005FE9F1 /* LaunchScreen.storyboard */; };
 		6E779DAB208AAB2D005FE9F1 /* Tinder_MockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E779DAA208AAB2D005FE9F1 /* Tinder_MockTests.swift */; };
 		6E779DB6208AAB2D005FE9F1 /* Tinder_MockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E779DB5208AAB2D005FE9F1 /* Tinder_MockUITests.swift */; };
+		6E779DC4208AAD4D005FE9F1 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E779DC3208AAD4D005FE9F1 /* CardViewController.swift */; };
+		6E779DC6208ABE52005FE9F1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E779DC5208ABE52005FE9F1 /* ProfileViewController.swift */; };
+		6E779DC9208AC85B005FE9F1 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E779DC7208AC85B005FE9F1 /* BaseTransition.swift */; };
+		6E779DCA208AC85B005FE9F1 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E779DC8208AC85B005FE9F1 /* FadeTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		6E779D92208AAB2C005FE9F1 /* Tinder_Mock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder_Mock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E779D95208AAB2C005FE9F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E779D97208AAB2C005FE9F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E779D9A208AAB2D005FE9F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6E779D9C208AAB2D005FE9F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E779D9F208AAB2D005FE9F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		6E779DB1208AAB2D005FE9F1 /* Tinder_MockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tinder_MockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E779DB5208AAB2D005FE9F1 /* Tinder_MockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tinder_MockUITests.swift; sourceTree = "<group>"; };
 		6E779DB7208AAB2D005FE9F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E779DC3208AAD4D005FE9F1 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		6E779DC5208ABE52005FE9F1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6E779DC7208AC85B005FE9F1 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		6E779DC8208AC85B005FE9F1 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				6E779D94208AAB2C005FE9F1 /* Tinder_Mock */,
-				6E779DA9208AAB2D005FE9F1 /* Tinder_MockTests */,
 				6E779DB4208AAB2D005FE9F1 /* Tinder_MockUITests */,
 				6E779D93208AAB2C005FE9F1 /* Products */,
 			);
@@ -98,8 +103,12 @@
 			isa = PBXGroup;
 			children = (
 				6E779D95208AAB2C005FE9F1 /* AppDelegate.swift */,
-				6E779D97208AAB2C005FE9F1 /* ViewController.swift */,
+				6E779DC3208AAD4D005FE9F1 /* CardViewController.swift */,
+				6E779DC5208ABE52005FE9F1 /* ProfileViewController.swift */,
+				6E779DA9208AAB2D005FE9F1 /* Tinder_MockTests */,
 				6E779D99208AAB2D005FE9F1 /* Main.storyboard */,
+				6E779DC7208AC85B005FE9F1 /* BaseTransition.swift */,
+				6E779DC8208AC85B005FE9F1 /* FadeTransition.swift */,
 				6E779D9C208AAB2D005FE9F1 /* Assets.xcassets */,
 				6E779D9E208AAB2D005FE9F1 /* LaunchScreen.storyboard */,
 				6E779DA1208AAB2D005FE9F1 /* Info.plist */,
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E779D98208AAB2C005FE9F1 /* ViewController.swift in Sources */,
+				6E779DC6208ABE52005FE9F1 /* ProfileViewController.swift in Sources */,
+				6E779DCA208AC85B005FE9F1 /* FadeTransition.swift in Sources */,
+				6E779DC9208AC85B005FE9F1 /* BaseTransition.swift in Sources */,
 				6E779D96208AAB2C005FE9F1 /* AppDelegate.swift in Sources */,
+				6E779DC4208AAD4D005FE9F1 /* CardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +444,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.elizabeth.Tinder-Mock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,7 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.elizabeth.Tinder-Mock";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
